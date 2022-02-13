@@ -1,0 +1,37 @@
+site_name: Technical notes
+docs_dir: docs
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - git-revision-date
+  - mermaid2
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - navigation.indexes
+
+  palette:
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
