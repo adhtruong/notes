@@ -6,11 +6,16 @@ markdown_extensions:
       custom_checkbox: true
 
 plugins:
-  - git-revision-date
+  - search
+  - git-revision-date-localized:
+      enabled: true
+      enable_creation_date: true
+      type: timeago
   - mermaid2
 
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.instant
     - navigation.top
