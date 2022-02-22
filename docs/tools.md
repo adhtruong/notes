@@ -1,7 +1,5 @@
 ## Git
 
-hello
-
 ```
 git add .
 git commit -m 'message'
@@ -37,3 +35,7 @@ pre-commit run -a
 Mkdocs builds docs from Markdown
 
 ### Useful Plugins
+
+## Cookiecutter
+
+For template projects.

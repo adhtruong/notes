@@ -1,6 +1,9 @@
 site_name: Technical notes
 docs_dir: docs
 
+repo_url: https://github.com/adhtruong/notes
+edit_uri: edit/main/docs/
+
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -26,7 +29,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
+      primary: green grey
       accent: light blue
       toggle:
         icon: material/toggle-switch
@@ -35,7 +38,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
+      primary: green grey
       accent: light blue
       toggle:
         icon: material/toggle-switch-off-outline
