@@ -12,3 +12,7 @@ repos:
       - id: mdformat
         additional_dependencies:
           - mdformat-gfm
+  - repo: https://github.com/codespell-project/codespell
+    rev: v1.16.0
+    hooks:
+      - id: codespell
