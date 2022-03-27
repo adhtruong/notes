@@ -7,6 +7,9 @@ edit_uri: edit/main/docs/
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
 
 plugins:
   - search
