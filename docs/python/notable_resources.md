@@ -1,3 +1,4 @@
 # Notable Resources
 
-- https://www.cosmicpython.com
+- [Cosmic Python](https://www.cosmicpython.com)
+- [Real Python](https://realpython.com/)
