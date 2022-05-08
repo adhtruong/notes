@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.2.7" name="generator"/>
-<title>Virtual env - Technical notes</title>
+<title>Environment management - Technical notes</title>
 <link href="../../assets/stylesheets/main.9d5733d3.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -22,7 +22,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#virtual-env">
+<a class="md-skip" href="#environment-management">
           Skip to content
         </a>
 </div>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Virtual env
+              Environment management
             
           </span>
 </div>
@@ -173,11 +173,11 @@
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Virtual env
+          Environment management
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Virtual env
+        Environment management
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -290,12 +290,22 @@
 <a class="md-content__button md-icon" href="https://github.com/adhtruong/notes/edit/main/docs/python/virtual_envs.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="virtual-env">Virtual env</h1>
+<h1 id="environment-management">Environment management</h1>
 <h2 id="virtual-env-module">Virtual Env module</h2>
+<p>Bundled with python 3.3+</p>
+<p>For unix,</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>python -m venv venv
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>source bin
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>source venv/bin/activate
+</code></pre></div>
+<p>or Windows,</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>python -m venv venv
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>source venv/Script/activate
 </code></pre></div>
 <h2 id="pipenv">Pipenv</h2>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip install pipenv
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>pipenv --python 3.9 shell
+</code></pre></div>
+<p>Default behaviour is to store virtual env remnants in global repo rather than local.</p>
 <h2 id="poetry">Poetry</h2>
 <!-- taken from
 https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
@@ -303,7 +313,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 <div class="md-source-file">
 <small>
 <!-- mkdocs-git-revision-date-localized-plugin -->
-     Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-22T21:29:35+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-22</span>
+     Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-08T13:19:42+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-08</span>
 <br/>
     Created: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-22T21:29:35+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-22</span>
 <!-- mkdocs-git-revision-date-plugin -->
