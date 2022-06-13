@@ -22,13 +22,15 @@ class Mapped(typing.Generic[_T]):
     if typing.TYPE_CHECKING:
 
         @typing.overload
-        def __get__(self, instance: None, owner: Any) -> type[_T]:
+        def __get__(self, instance: None, owner: typing.Any) -> type[_T]:
             ...
 
         @typing.overload
-        def __get__(self, instance: object, owner: Any) -> _T:
+        def __get__(self, instance: object, owner: typing.Any) -> _T:
             ...
 
-        def __get__(self, instance: object, owner: Any) -> Union[type[_T], _T]:
+        def __get__(
+            self, instance: object, owner: typing.Any
+        ) -> typing.Union[type[_T], _T]:
             ...
 ```
